@@ -1,0 +1,9 @@
+services:
+  react:
+    image: node:latest
+    command: npm start
+    working_dir: /app
+    volumes:
+      - "./example:/app"
+    ports:
+      - "3000:3000"
